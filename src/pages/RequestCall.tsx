@@ -5,6 +5,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Check, GraduationCap, Users, Brain, LineChart, Dumbbell, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+
 const RequestCall = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -30,7 +31,10 @@ const handleSubmit = async (e: React.FormEvent) => {
   console.log("Submitting form:", formData);
 
   try {
-    const res = await fetch("http://localhost:3000/request-call", {
+    const res = await fetch(
+      // "http://localhost:3000/request-call", 
+      `${process.env.BACKEND_URL}/request-call`, 
+      {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

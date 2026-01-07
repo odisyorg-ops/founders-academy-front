@@ -29,7 +29,7 @@ import ebookCoaching from "@/assets/ebook-coaching.png";
 /* -------------------------------------------------------------------------- */
 /*                               Static Config                                */
 /* -------------------------------------------------------------------------- */
-
+const API_URL = import.meta.env.BACKEND_URL;
 const SERIES_BOOK_IDS = ["ebook-sdr", "ebook-bdm", "ebook-am"];
 
 const SERIES_BOOKS = [
@@ -144,7 +144,8 @@ const Checkout = () => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:3000/create-checkout-session",
+        `${API_URL}/create-checkout-session`,
+        // "http://localhost:3000/create-checkout-session",
         payload
       );
 

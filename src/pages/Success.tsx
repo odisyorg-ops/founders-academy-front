@@ -24,7 +24,9 @@ const Success = () => {
     }
 
     // Call the verification endpoint we just created
-    axios.post("http://localhost:3000/api/verify-session", { sessionId })
+    axios.post(
+        `${process.env.BACKEND_URL}/api/verify-session`,
+         { sessionId })
       .then((res) => {
         if (res.data.success) {
           setItems(res.data.items);
