@@ -29,7 +29,7 @@ import ebookCoaching from "@/assets/ebook-coaching.png";
 /* -------------------------------------------------------------------------- */
 /*                               Static Config                                */
 /* -------------------------------------------------------------------------- */
-const API_URL = import.meta.env.BACKEND_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 const SERIES_BOOK_IDS = ["ebook-sdr", "ebook-bdm", "ebook-am"];
 
 const SERIES_BOOKS = [
@@ -133,6 +133,7 @@ const Checkout = () => {
   };
 
   const handleCheckout = async () => {
+    console.log(API_URL);
     try {
       const payload = {
         items: displayItems.map((item) => ({

@@ -33,7 +33,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   try {
     const res = await fetch(
       // "http://localhost:3000/request-call", 
-      `${process.env.BACKEND_URL}/request-call`, 
+      `${process.env.VITE_API_URL}/request-call`, 
       {
       method: "POST",
       headers: {
