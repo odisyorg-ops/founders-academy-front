@@ -13,6 +13,7 @@ const Success = () => {
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const sessionId = searchParams.get("session_id");
+  const apiUrl = "https://founders-academy-back-rho.vercel.app";
 
   const [status, setStatus] = useState<"loading" | "success" | "error">("loading");
   const [items, setItems] = useState<DownloadItem[]>([]);
@@ -25,7 +26,8 @@ const Success = () => {
 
     // Call the verification endpoint we just created
     axios.post(
-        `${process.env.VITE_API_URL}/api/verify-session`,
+        // `${process.env.VITE_API_URL}/api/verify-session/`,
+        `${apiUrl}/api/verify-session`,
          { sessionId })
       .then((res) => {
         if (res.data.success) {
