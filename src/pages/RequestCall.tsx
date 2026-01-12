@@ -29,11 +29,13 @@ const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   setIsSubmitting(true);
   console.log("Submitting form:", formData);
+  const apiUrl = "https://founders-academy-back-rho.vercel.app";
 
   try {
     const res = await fetch(
       // "http://localhost:3000/request-call", 
-      `${process.env.VITE_API_URL}/request-call`, 
+      // `${process.env.VITE_API_URL}/request-call`, 
+      `${apiUrl}/api/request-call`, 
       {
       method: "POST",
       headers: {
