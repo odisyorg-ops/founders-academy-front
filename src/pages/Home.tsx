@@ -258,11 +258,11 @@ const Home = () => {
               <span className="font-medium">Trusted by Industry Professionals</span>
             </div>
             <div className="hidden md:block w-px h-6 bg-slate-300"></div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <span className="font-bold text-indigo-600">£50M+</span>
               <span>Pipeline Generated</span>
-            </div>
-            <div className="hidden md:block w-px h-6 bg-slate-300"></div>
+            </div> */}
+            {/* <div className="hidden md:block w-px h-6 bg-slate-300"></div> */}
             <div className="flex items-center gap-2">
               <span className="font-bold text-emerald-600">10%</span>
               <span>Profits to Charity</span>
@@ -488,7 +488,7 @@ const Home = () => {
       </section>
 
       {/* TESTIMONIALS / SOCIAL PROOF */}
-      <section className="py-16 bg-slate-50">
+      {/* <section className="py-16 bg-slate-50">
         <div data-aos="fade-up" className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -542,7 +542,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* MISSION / VISION / ESG */}
       <section data-aos="fade-up" className="max-w-6xl mx-auto px-6 py-16">

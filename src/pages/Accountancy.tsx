@@ -202,7 +202,7 @@ const Budgeting = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section id="testimonials" className="max-w-6xl mx-auto px-6 py-12" data-aos="fade-up">
+      {/* <section id="testimonials" className="max-w-6xl mx-auto px-6 py-12" data-aos="fade-up">
         <h3 className="text-xl font-bold mb-6">What Our Clients Say</h3>
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testi, idx) => (
@@ -215,7 +215,7 @@ const Budgeting = () => {
             </blockquote>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* PRICING */}
       <section id="pricing" data-aos="fade-up" className="py-16">
