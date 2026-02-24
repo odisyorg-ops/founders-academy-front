@@ -272,7 +272,7 @@ const Home = () => {
       </section>
 
       {/* RESOURCE LIBRARY - E-book Sales Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-slate-50">
+      {/* <section className="py-16 bg-gradient-to-b from-white to-slate-50">
         <div data-aos="fade-up" className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <div className="inline-block px-4 py-2 rounded-full bg-indigo-100 text-indigo-700 text-sm font-semibold mb-4">
@@ -289,7 +289,6 @@ const Home = () => {
             </p>
           </div>
 
-          {/* E-book Grid */}
           <div className="grid gap-[clamp(1.5rem,3vw,2.5rem)] md:grid-cols-3 mb-[clamp(3rem,6vh,4.5rem)]">
             {ebooks.map((ebook, i) => {
               const inCart = isInCart(ebook.id)
@@ -300,7 +299,6 @@ const Home = () => {
                   data-aos-delay={i * 120}
                   className="group flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_12px_30px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
                 >
-                  {/* Image */}
                   <div className="relative aspect-[3/4] overflow-hidden">
                     <img
                       src={ebook.image}
@@ -312,7 +310,6 @@ const Home = () => {
                     </span>
                   </div>
 
-                  {/* Content */}
                   <div className="flex flex-1 flex-col p-[clamp(1.25rem,2vw,1.75rem)]">
                     <div className="mb-2 flex items-center gap-2 text-indigo-600">
                       <BookOpen className="h-4 w-4" />
@@ -361,12 +358,10 @@ const Home = () => {
           </div>
 
 
-          {/* Bundle Offer with FUD Reducers */}
           <div
             className="bg-gradient-to-br from-indigo-600 via-violet-600 to-purple-700 rounded-2xl p-8 text-white shadow-2xl relative overflow-hidden"
             data-aos="zoom-in"
           >
-            {/* Urgency Banner */}
             <div className="absolute top-0 left-0 right-0 bg-red-500 text-white text-center py-2 text-sm font-bold animate-pulse">
               🔥 LIMITED TIME OFFER - Ends Soon! 🔥
             </div>
@@ -385,7 +380,6 @@ const Home = () => {
                   <span className="bg-white/20 px-3 py-1 rounded text-sm">✓ BDM Playbook (124 pages)</span>
                   <span className="bg-white/20 px-3 py-1 rounded text-sm">✓ AM Playbook (79 pages)</span>
                 </div>
-                {/* FUD Reducers */}
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start text-sm text-indigo-200">
                   <span className="flex items-center gap-1">
                     <Check className="w-4 h-4" />
@@ -418,7 +412,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Browse All Resources Link */}
           <div className="text-center mt-8">
             <NavLink to="/resources" className="inline-flex items-center gap-2 text-indigo-600 font-medium hover:underline">
               Browse all resources including free downloads
@@ -426,7 +419,7 @@ const Home = () => {
             </NavLink>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* VALUE PROPOSITIONS - Why Choose Us */}
       <section className="py-16 bg-white">
